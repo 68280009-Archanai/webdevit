@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Example 01</title>
+    <style>
+        div {
+            width: 150px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            background-color: lightgray;
+            position: relative;
+        }
+
+        .parent {
+            position: relative;
+            width: 100%;
+            height: 200px;
+
+            .box1 {
+                background-color: rgb(154, 221, 247);
+            }
+
+            .box2 {
+                background-color: rgb(74, 135, 159);
+            }
+
+            .box3 {
+                background-color: rgb(16, 77, 102);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box1 box">Box 1 (absolute)</div>
+        <div class="box2 box">Box 2 (absolute)</div>
+        <div class="box3 box">Box 3 (absolute)</div>
+    </div>
+</body>
+
+</html>
