@@ -1,12 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile-card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #005461;
+        }
+
+        .Box {
+            width: 350px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 100px rgb(79, 79, 79);
+            background-color: #018790;
+        }
+
+        .Name {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .Name h2 {
+            color: #ffffff;
+            text-shadow: #18181b 0px 0px 5px;
+        }
+
+        .box-detail {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #F4F4F4;
+            border-radius: 10px;
+            border: 1px solid #ffffff;
+            box-shadow: 0px 0px 5px rgb(245, 245, 245);
+            margin-bottom: 10px;
+        }
+
+        .detail {
+            font-size: large;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+            border-radius: 13px;
+            box-shadow: 0px 0px 2px #181818;
+            background-color: #5a595b;
+            text-shadow: #070707 0px 0px 5px;
+            color: rgb(195, 195, 196);
+        }
+
+        .score {
+            font-size: large;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+            border-radius: 13px;
+            text-shadow: #048ea3 0px 0px 5px;
+            color: #3a3a3a;
+            gap: 43px;
+        }
+        .score p {
+            background-color: #ffffff;
+            box-shadow: #005461 0px 0px 5px;
+            width: 50px;
+            height: 15px;
+            text-align: center;
+            padding: 15px;
+            margin: 0px 10px;
+            border-radius: 8px;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            border-radius: 13px;
+            margin: 18px;
+            padding: 5px;
+        }
+        .button button {
+            width: 100px;
+            height: 35px;
+            border-radius: 8px;
+            border: none;
+            box-shadow: 0px 0px 5px #ffffff;
+            font-size: medium;
+            font-weight: bold;
+            color: white;
+            background-color: #048ea3;
+            cursor: pointer;
+        }
+
+        .button button:hover {
+            background-color: #019caa;
+            box-shadow: 0px 0px 10px #000000;
+            color: rgb(255, 255, 255);
+            text-shadow: #000000 0px 0px 5px;
+            transform: scale(1.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: content-fit;
+            height: 50px;
+        }
+
+        .social img {
+            width: 30px;
+            height: auto;
+            filter: drop-shadow(0px 0px 5px cornflowerblue);
+            border-radius: 50%;
+        }
+
+        .social img:hover {
+            transform: scale(1.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .Profile {
+            display: flex;
+            justify-content: center;
+        }
+
+        .Profile img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            border: solid 1px #444444;
+            box-shadow: 0px 0px 8px white;
+        }
+    </style>
 </head>
 
 <body>
-    
+    <div class="Box">
+
+        <div class="Profile">
+            <img src="Profile/Profile.png" alt="">
+        </div>
+
+        <div class="Name">
+            <h2>Archanai Samranpit</h2>
+        </div>
+
+        <div class="box-detail">
+
+            <div class="detail">
+                <p>Post</p>
+                <p>Following</p>
+            </div>
+
+            <div class="score">
+                <p>20</p>
+                <p>1.8k</p>
+            </div>
+
+            <div class="button">
+                <button type="submit">Follow</button>
+                <button type="submit">Contact</button>
+
+            </div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="Profile/fb.png"></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img src="Profile/tiktok.png" alt="" srcset=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Profile/ig.png" alt="" srcset=""></a>
+                <a href="https://x.com/" target="_blank"><img src="Profile/x.png" alt="" srcset=""></a>
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
