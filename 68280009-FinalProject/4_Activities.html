@@ -1,13 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activities</title>
+    <title>กิจกรรม</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            margin: 0;
+            background-color: #0b0b0b;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://www.senate.go.th/assets/portals/386/fileups/676/images/2568%20%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B2%20%E0%B8%A7%E0%B8%B8%E0%B8%92%E0%B8%B4%E0%B8%AA%E0%B8%A0%E0%B8%B2%E0%B9%84%E0%B8%97%E0%B8%A2/5.variey/06-68%20Phi%20Ta%20Khon%20Festival/media_4595ac49-dac6-401c-b926-f40f131e8470.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #e0e0e0;
+        }
+
+
+        nav {
+            background-color: #800000;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #ffd700;
+        }
+
+        nav .logo {
+            color: #ffd700;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .head-title {
+            text-align: center;
+            margin: 50px 0;
+            color: #ffd700;
+            font-size: 3rem;
+            text-shadow: 2px 2px 10px rgba(128, 0, 0, 0.8);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .activity-row {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 80px;
+            background: rgba(20, 20, 20, 0.8);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid #444;
+        }
+
+        .activity-row:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .content-text {
+            flex: 1;
+        }
+
+        .content-image {
+            flex: 1;
+        }
+
+        .content-image img {
+            width: 100%;
+            border-radius: 15px;
+            border: 2px solid #800000;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #ffd700;
+            margin-top: 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #000;
+            color: #888;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 80px;
+            border-top: 2px solid #800000;
+        }
+
+        .footer-nav {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .footer-nav a {
+            text-decoration: none;
+            color: #ffd700;
+            font-size: 14px;
+            background-color: rgba(128, 0, 0, 0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid #800000;
+            transition: 0.3s;
+        }
+
+        .footer-nav a:hover {
+            background-color: #800000;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
-<h1>กิจกรรมและขบวนแห่</h1>
+
 <body>
-    <a href="3_Costume.html">เครื่องแต่งกายและศิลปะ</a>
-    <a href="5_Contact.html">page 5</a>
+
+    <nav>
+        <a href="index.html" class="logo">PHI TA KHON</a>
+        <ul>
+            <li><a href="1_Homepage.html">หน้าหลัก</a></li>
+            <li><a href="2_Legend.html">ประวัติ</a></li>
+            <li><a href="3_Costume.html">เครื่องแต่งกาย</a></li>
+            <li><a href="4_Activities.html" style="color: #ffd700;">กิจกรรม</a></li>
+            <li><a href="5_Contact.html">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="head-title">กิจกรรมและขบวนแห่</h1>
+
+    <div class="container">
+        <div class="activity-row">
+            <div class="content-image">
+                <img src="https://thainews.prd.go.th/_next/image/?url=https%3A%2F%2Fnnt-storage-thainews.prd.go.th%2Fmedia-news%2Fraw%2F2025%2F06%2F28%2F4ade4d8c83d0f2a8951d52ec3194f14a.jpg&w=3840&q=75"
+                    alt="วันรวม">
+            </div>
+            <div class="content-text">
+                <h2>วันที่ 1: วันรวม (วันโฮม)</h2>
+                <p>วันแห่งการรวมพลังศรัทธาและพิธีกรรมศักดิ์สิทธิ์:</p>
+                <ul>
+                    <li><b>พิธีเบิกพระอุปคุต:</b> เชิญพระอุปคุตจากลำน้ำหมันมาประดิษฐาน ณ วัดโพนชัย</li>
+                    <li><b>การปรากฏตัว:</b> ผีตาโขนเริ่มออกมาสร้างความสนุกสนานทั่วเมือง</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-row">
+            <div class="content-image">
+                <img src="https://www.matichon.co.th/wp-content/uploads/2022/07/S__89522181.jpg" alt="วันแห่ขบวน">
+            </div>
+            <div class="content-text">
+                <h2>วันที่ 2: วันแห่ขบวน (พิธีเปิด)</h2>
+                <p>ไฮไลท์ที่ยิ่งใหญ่ที่สุดของเทศกาล:</p>
+                <ul>
+                    <li><b>ขบวนแห่เจ้าพ่อกวน:</b> ผู้นำทางจิตวิญญาณนำขบวนแห่อันศักดิ์สิทธิ์</li>
+                    <li><b>พิธีจุดบั้งไฟ:</b> การขอฝนตามประเพณีโบราณเพื่อให้พืชผลอุดมสมบูรณ์</li>
+                    <li><b>การทิ้งหน้ากาก:</b> ลอยหน้ากากลงน้ำเพื่อทิ้งความทุกข์โศก</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="activity-row">
+            <div class="content-image">
+                <img src="https://www.senate.go.th/assets/portals/386/fileups/676/images/2568%20%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B2%20%E0%B8%A7%E0%B8%B8%E0%B8%92%E0%B8%B4%E0%B8%AA%E0%B8%A0%E0%B8%B2%E0%B9%84%E0%B8%97%E0%B8%A2/5.variey/06-68%20Phi%20Ta%20Khon%20Festival/bunluang-phitakhon-dansai-006-768x432.jpg"
+                    alt="วันฟังเทศน์">
+            </div>
+            <div class="content-text">
+                <h2>วันที่ 3: วันฟังเทศน์มหาชาติ</h2>
+                <p>วันแห่งความสงบและการทำบุญใหญ่:</p>
+                <ul>
+                    <li><b>ฟังเทศน์ 13 กัณฑ์:</b> ณ วัดโพนชัย เพื่อความเป็นสิริมงคลแก่ชีวิต</li>
+                    <li><b>ทำบุญมหาชาติ:</b> การเฉลิมฉลองการกลับมาของพระเวสสันดร</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="3_Costume.html">เครื่องแต่งกายและศิลปะ</a>
+            <a href="5_Contact.html">ติดต่อ</a>
+        </div>
+        <p>&copy; 2025 ประเพณีผีตาโขน - วิชาการพัฒนาโปรแกรมประยุกต์บนเว็บ</p>
+        <p>จัดทำโดย: นายอาชาไนย สำราญพิศ | รหัสนักศึกษา: 68280009 </p>
+    </footer>
+
 </body>
+
 </html>

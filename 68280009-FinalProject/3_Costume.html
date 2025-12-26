@@ -1,130 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Costume</title>
+    <title>Costume - เครื่องแต่งกายและศิลปะ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            margin: 50px;
+            font-family: 'Kanit', sans-serif;
+            margin: 0;
             line-height: 1.6;
-            color: #333;
-            height: 100vh;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-            url("https://culturio.sac.or.th/storage/content/uploads/SAC-20230404-021-1735227902.jpg");
+            color: #e0e0e0;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+                url("https://culturio.sac.or.th/storage/content/uploads/SAC-20230404-021-1735227902.jpg");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
         }
 
-         .head h1 {
-            text-align: center;
-            font-size: 48px;
-            color: #ffffff;
-            text-shadow: #000000; text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
-            margin-bottom: 40px;
-        }
-        
-        .p1,
-        .p2,
-        .p3{
-            background-color: rgba(19, 19, 19, 0.7);
-            border-radius: 10px;
-            border: solid 2px #000000;
-            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
-            padding: 10px;
-            margin-bottom: 30px;
-            font-size: 18px;
-            text-align: justify;
-            text-indent: 50px;
-            color: #ffffff;
-            max-width: 800px;
-            margin: 0 auto 30px auto;
+        nav {
+            background-color: #800000;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #ffd700;
         }
 
-         ul {
+        nav .logo {
+            color: #ffd700;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
             margin-left: 20px;
-            text-indent: 0px;
         }
 
-        img {
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 300;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        .header-box {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .header-box h1 {
+            font-size: 3.5rem;
+            color: #ffd700;
+            text-shadow: 3px 3px 15px rgba(128, 0, 0, 0.8);
+            margin: 0;
+        }
+
+        .main-column {
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .section-box {
+            background-color: rgba(20, 20, 20, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #800000;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .section-box b {
+            font-size: 1.5rem;
+            color: #ffd700;
             display: block;
-            margin: auto;
-            margin-top: 100px;
-            margin-bottom: 100px;
-            border-radius: 20px;
-            border: solid 2px #000000;
-            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
-            
+            margin-bottom: 15px;
+        }
+
+        .section-box ul {
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .img-box {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .img-box img {
+            width: 100%;
+            max-width: 650px;
+            border-radius: 15px;
+            border: 2px solid #800000;
+            box-shadow: 0 5px 15px rgba(128, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .img-box img:hover {
+            transform: scale(1.02);
+            border-color: #ffd700;
         }
 
         footer {
-            position: relative;
-            bottom: 50px;
-            width: 100%;
+            background-color: #000;
+            color: #888;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 80px;
+            border-top: 2px solid #800000;
+        }
+
+        .footer-nav {
+            margin-bottom: 20px;
             display: flex;
             justify-content: center;
-            gap: 20px;
-            padding-bottom: 50px;
+            gap: 15px;
         }
 
-        footer a {
+        .footer-nav a {
             text-decoration: none;
+            color: #ffd700;
+            font-size: 14px;
+            background-color: rgba(128, 0, 0, 0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid #800000;
+            transition: 0.3s;
+        }
+
+        .footer-nav a:hover {
+            background-color: #800000;
             color: white;
-            font-size: 16px;
-            background-color: rgba(61, 61, 61, 0.7);
-            padding: 10px 20px;
-            border-radius: 50px;
-            border: 2px solid #777676;
-            transition: 0.3s all ease;
-        }
-
-        footer a:hover {
-            background-color: #e74c3c;
             transform: scale(1.1);
-            font-size: 18px;
-            color: rgb(255, 255, 255);
         }
 
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 
 <body>
-    <div class="head">
-    <h1>เครื่องแต่งกายและศิลปะ</h1>
-</div>
-    <div class="p1">
-        <p><b>ศิลปะและเครื่องแต่งกายผีตาโขน</b></p>
-        <p>การแต่งกายของผีตาโขนถือเป็นงานศิลปะพื้นบ้านที่ผสมผสานความเชื่อเข้ากับความคิดสร้างสรรค์ โดยมีส่วนประกอบหลัก
-            3ส่วน ดังนี้:</p>
-    </div>
 
-    <div class="p2">
-        <p><b>หน้ากากผีตาโขน</b></p>
-        <p>ถือเป็นหัวใจสำคัญที่สุด แบ่งออกเป็น 3 ส่วนย่อยที่นำมาประกอบกัน:</p>
+    <nav>
+        <a href="index.html" class="logo">PHI TA KHON</a>
         <ul>
-            <li>ส่วนหัว: ทำจาก "หวด" (ภาชนะสานด้วยไม้ไผ่สำหรับนึ่งข้าวเหนียว) โดยนำมาหักพับให้มีลักษณะคล้ายหมวก</li>
-            <li>ใบหน้า: ทำจาก "โคนก้านมะพร้าว" ถากให้เป็นรูปหน้ามนุษย์ มีการเจาะช่องตา</li>
-            <li> &nbsp; จมูก: &nbsp; ทำจาก ไม้เนื้ออ่อนแกะสลักเป็นรูปทรงต่างๆ มักมีลักษณะงุ้มยาวเหมือนงวงช้าง หรือแหลมคม
-            </li>
+            <li><a href="index.html">หน้าหลัก</a></li>
+            <li><a href="2_History.html">ประวัติ</a></li>
+            <li><a href="3_Costume.html" style="color: #ffd700;">เครื่องแต่งกาย</a></li>
+            <li><a href="4_Activities.html">กิจกรรม</a></li>
+            <li><a href="5_Contact.html">ติดต่อ</a></li>
         </ul>
+    </nav>
+
+    <div class="header-box">
+        <h1>เครื่องแต่งกายและศิลปะ</h1>
     </div>
 
-    <div class="p3">
-        <b>ศิลปะการลวดลาย:</b>
-        <p>ในอดีตจะใช้สีจากธรรมชาติ เช่น ยางไม้หรือดินแดง แต่ปัจจุบันนิยมใช้สีน้ำมันหรือสีอะคริลิก เพื่อให้มีสีสันสดใส
-            เช่น แดง เขียว เหลือง และขาว วาดเป็นลายไทย ลายกนก หรือลายก้านขด</p>
-    </div>
+    <div class="main-column">
 
-    <div class="img">
-        <img src="https://rituals.sac.or.th/files/rituals/72/museumdatabase.jpg" alt="">
+        <div class="section-box">
+            <b>ศิลปะและเครื่องแต่งกายผีตาโขน</b>
+            <p>การแต่งกายของผีตาโขนถือเป็นงานศิลปะพื้นบ้านที่ผสมผสานความเชื่อเข้ากับความคิดสร้างสรรค์
+                โดยมีส่วนประกอบหลัก 3 ส่วน</p>
+        </div>
+
+        <div class="img-box">
+            <img src="https://rituals.sac.or.th/files/rituals/72/museumdatabase.jpg" alt="Phi Ta Khon Mask Detail">
+        </div>
+
+        <div class="section-box">
+            <b>หน้ากากผีตาโขน</b>
+            <p>ถือเป็นหัวใจสำคัญที่สุด แบ่งออกเป็น 3 ส่วนย่อยที่นำมาประกอบกัน:</p>
+            <ul>
+                <li><b>ส่วนหัว:</b> ทำจาก "หวด" นึ่งข้าวเหนียวที่นำมาพับ</li>
+                <li><b>ใบหน้า:</b> ทำจากโคนก้านมะพร้าวถากเป็นรูปหน้า</li>
+                <li><b>จมูก:</b> ทำจากไม้เนื้ออ่อนแกะสลักเป็นรูปทรงต่างๆ</li>
+            </ul>
+        </div>
+
+        <div class="section-box">
+            <b>ศิลปะการลวดลาย</b>
+            <p>ในอดีตใช้สีจากธรรมชาติ ปัจจุบันนิยมใช้สีน้ำมันหรือสีอะคริลิกเพื่อให้มีสีสันสดใส เช่น แดง เขียว เหลือง
+                และขาว วาดเป็นลายไทย ลายกนก หรือลายก้านขด</p>
+        </div>
+
     </div>
 
     <footer>
-        <a href="2_Legend.html">ตำนานและความเชื่อ</a>
-        <a href="4_Activities.html">กิจกรรมและขบวนแห่</a>
+        <div class="footer-nav">
+            <a href="2_Legend.html">ตำนานและความเชื่อ</a>
+            <a href="4_Activities.html">กิจกรรมและขบวนแห่</a>
+        </div>
+        <p>&copy; 2025 ประเพณีผีตาโขน - วิชาการพัฒนาโปรแกรมประยุกต์บนเว็บ</p>
+        <p>จัดทำโดย: นายอาชาไนย สำราญพิศ | รหัสนักศึกษา: 68280009 </p>
     </footer>
 
 </body>
